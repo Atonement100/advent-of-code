@@ -27,5 +27,5 @@ inFile = open('input.txt','r')
 dir_list = inFile.read().split(", ")
 dir_tuples = [direction_split(str) for str in dir_list]
 (north, east) = process_directions(dir_tuples)
-print(north + east)
+print(abs(north) + abs(east))
 input("Press Enter to continue...")
